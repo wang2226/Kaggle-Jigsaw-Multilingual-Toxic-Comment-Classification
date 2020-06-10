@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{test-en-df}
+Camaro.
+\newblock test-en-df, Mar 2020.
+
+\bibitem{xlm-roberta}
+Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume
+  Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, and
+  Veselin Stoyanov.
+\newblock Unsupervised cross-lingual representation learning at scale.
+\newblock 2019.
+
+\bibitem{BERT}
+Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock {BERT:} pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em CoRR}, abs/1810.04805, 2018.
+
+\bibitem{kimcnn}
+Yoon Kim.
+\newblock Convolutional neural networks for sentence classification.
+\newblock {\em CoRR}, abs/1408.5882, 2014.
+
+\bibitem{roberta}
+Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
+  Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov.
+\newblock Roberta: {A} robustly optimized {BERT} pretraining approach.
+\newblock {\em CoRR}, abs/1907.11692, 2019.
+
+\bibitem{weight}
+Ilya Loshchilov and Frank Hutter.
+\newblock Fixing weight decay regularization in adam.
+\newblock {\em CoRR}, abs/1711.05101, 2017.
+
+\bibitem{attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em CoRR}, abs/1706.03762, 2017.
+
+\end{thebibliography}
