@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2020 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  10 JUN 2020 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,32 +267,47 @@ LaTeX Warning: Label `fig:my-label' multiply defined.
 
 LaTeX Warning: Label `fig:my-label' multiply defined.
 
+
+LaTeX Warning: Label `fig:my-label' multiply defined.
+
+
+LaTeX Warning: Label `table:my-label' multiply defined.
+
+
+LaTeX Warning: Label `table:my-label' multiply defined.
+
+
+LaTeX Warning: Label `table:my-label' multiply defined.
+
+
+LaTeX Warning: Label `table:my-label' multiply defined.
+
 )
 \openout1 = `final_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
 1.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 41.
+Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -306,9 +321,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count194
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (./final_report.out) (./final_report.out)
 \@outlinefile=\write3
 \openout3 = `final_report.out'.
@@ -340,130 +355,143 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 42
+(Font)              <6> on input line 22.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
 2.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 9.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 2426) in paragraph at lines 49--54
-\OT1/ptm/m/n/10.95 For this project, I am com-pet-ing in Jig-saw
+Underfull \hbox (badness 3281) in paragraph at lines 29--34
+\OT1/ptm/m/n/10.95 For this project, I com-peted in the Jig-saw
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+\OT1/ptm/m/n/10.95 Multi-lingual Toxic Com-ment Clas-si-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 29--34
+\OT1/ptm/m/n/10.95 com-pe-ti-tion hosted on Kag-gle by Jig-saw and
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 29--34
+\OT1/ptm/m/n/10.95 Google [[]]. Jig-saw [[]], for-merly known as
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 29--34
+\OT1/ptm/m/n/10.95 have there-fore ded-i-cated \TS1/ptm/m/n/10.95 $\OT1/ptm/m/n
+/10.95 50,000 to host this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
  []
 
 
-Underfull \hbox (badness 3503) in paragraph at lines 49--54
-\OT1/ptm/m/n/10.95 Text clas-si-fi-ca-tion is like the \hello world"
- []
-
-
-Underfull \hbox (badness 2261) in paragraph at lines 49--54
-\OT1/ptm/m/n/10.95 well XLM-RoBERTa and com-pare the re-sult
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 49--54
+Underfull \hbox (badness 4205) in paragraph at lines 29--34
 \OT1/ptm/m/n/10.95 In ad-di-tion to fine-tuning BERT mod-els, I
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 49--54
-\OT1/ptm/m/n/10.95 Py-Torch on TPU, I will need Py-Torch/XLA
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
+\OT1/ptm/m/n/10.95 BERT, short for \OT1/ptm/b/n/10.95 B\OT1/ptm/m/n/10.95 idire
+ctional \OT1/ptm/b/n/10.95 E\OT1/ptm/m/n/10.95 ncoder
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 61--74
-\OT1/ptm/m/n/10.95 BERT, short for Bidi-rec-tional En-coder Rep-re-
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
+\OT1/ptm/b/n/10.95 R\OT1/ptm/m/n/10.95 epresentation from \OT1/ptm/b/n/10.95 T\
+OT1/ptm/m/n/10.95 ransformers has two
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
-
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 61--74
-\OT1/ptm/m/n/10.95 Transformers con-sists a num-ber of en-coders
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
+
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 41--54
+\OT1/ptm/m/n/10.95 Multi-headed at-ten-tion com-putes self-attention
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 41--54
 \OT1/ptm/m/n/10.95 mul-ti-ple times in par-al-lel and in-de-pen-dently.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 61--74
-\OT1/ptm/m/n/10.95 Now, let us ex-am-ine what self-attention is.
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 61--74
+Underfull \hbox (badness 4254) in paragraph at lines 41--54
 \OT1/ptm/m/n/10.95 is an at-ten-tion mech-a-nism re-lat-ing dif-fer-ent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 
  []
 
 
-Underfull \hbox (badness 4036) in paragraph at lines 61--74
-\OT1/ptm/m/n/10.95 To cal-cu-late self-attention, the en-coder will
+Underfull \hbox (badness 4048) in paragraph at lines 41--54
+\OT1/ptm/m/n/10.95 To cal-cu-late self-attention, the en-coder cre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 1092) in paragraph at lines 41--54
+\OT1/ptm/m/n/10.95 word of the in-put se-quence against the other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 \OT1/ptm/m/n/10.95 Transformers also add po-si-tional en-cod-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--74
+Underfull \hbox (badness 10000) in paragraph at lines 41--54
 
  []
 
@@ -472,402 +500,448 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--74
 
 
 ]
-<figures/figure1.png, id=19, 238.8925pt x 130.4875pt>
+<figures/figure1.png, id=25, 238.8925pt x 130.4875pt>
 File: figures/figure1.png Graphic file (type png)
 <use figures/figure1.png>
-Package pdftex.def Info: figures/figure1.png  used on input line 77.
+Package pdftex.def Info: figures/figure1.png  used on input line 57.
 (pdftex.def)             Requested size: 238.8919pt x 130.48717pt.
 
-Overfull \hbox (19.80579pt too wide) in paragraph at lines 77--78
+Overfull \hbox (19.80579pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-<figures/figure2.png, id=23, 227.85126pt x 230.8625pt>
+<figures/figure2.png, id=29, 227.85126pt x 230.8625pt>
 File: figures/figure2.png Graphic file (type png)
 <use figures/figure2.png>
-Package pdftex.def Info: figures/figure2.png  used on input line 83.
+Package pdftex.def Info: figures/figure2.png  used on input line 63.
 (pdftex.def)             Requested size: 227.8507pt x 230.86192pt.
 
-Overfull \hbox (8.76457pt too wide) in paragraph at lines 83--84
+Overfull \hbox (8.76457pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
-<figures/figure3.png, id=26, 91.34125pt x 133.49875pt>
+<figures/figure3.png, id=32, 91.34125pt x 133.49875pt>
 File: figures/figure3.png Graphic file (type png)
 <use figures/figure3.png>
-Package pdftex.def Info: figures/figure3.png  used on input line 89.
+Package pdftex.def Info: figures/figure3.png  used on input line 69.
 (pdftex.def)             Requested size: 91.34102pt x 133.4984pt.
+<figures/self-attention.png, id=35, 788.9475pt x 749.80125pt>
+File: figures/self-attention.png Graphic file (type png)
+<use figures/self-attention.png>
+Package pdftex.def Info: figures/self-attention.png  used on input line 75.
+(pdftex.def)             Requested size: 236.68607pt x 224.94211pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--102
+Overfull \hbox (17.59995pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 82--89
+\OT1/ptm/m/n/10.95 model like BERT to solve our own spe-cific
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 96--102
-\OT1/ptm/m/n/10.95 into BERT, some words in the se-quence are
+Underfull \hbox (badness 2269) in paragraph at lines 82--89
+\OT1/ptm/m/n/10.95 BERT is pre-trained on two tasks: Masked
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--102
-
- []
-
-[2 <./figures/figure1.png> <./figures/figure2.png> <./figures/figure3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
 
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
+
+ []
+
+[2 <./figures/figure1.png> <./figures/figure2.png> <./figures/figure3.png> <./f
+igures/self-attention.png>]
+Underfull \hbox (badness 2205) in paragraph at lines 93--96
+\OT1/ptm/m/n/10.95 re-searchers who are work-ing on non-English
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 93--96
 \OT1/ptm/m/n/10.95 XLM-RoBERTa is trained on 100 lan-guages,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 112--113
-\OT1/ptm/m/n/10.95 to spe-cial-ize in deep learn-ing. Mod-els that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 1769) in paragraph at lines 103--108
+\OT1/ptm/m/n/10.95 The Jig-saw Kag-gle com-pe-ti-tion has pro-vided
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 103--108
+\OT1/ptm/m/n/10.95 train-ing set from the pre-vi-ous com-pe-ti-tion to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 116--121
-\OT1/ptm/m/n/10.95 I will use BERT and XLM-RoBERTa pre-
+Underfull \hbox (badness 3657) in paragraph at lines 103--108
+\OT1/ptm/m/n/10.95 I used the BERT and XLM-RoBERTa pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
-
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 116--121
-\OT1/ptm/m/n/10.95 Since this is a ker-nel only com-pe-ti-tion, in-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 1721) in paragraph at lines 115--122
+\OT1/ptm/m/n/10.95 I will add drop out for BERT base to pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-<figures/figure4.png, id=45, 174.6525pt x 168.63pt>
-File: figures/figure4.png Graphic file (type png)
-<use figures/figure4.png>
-Package pdftex.def Info: figures/figure4.png  used on input line 138.
-(pdftex.def)             Requested size: 174.65207pt x 168.62958pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
+Underfull \hbox (badness 3333) in paragraph at lines 115--122
+\OT1/ptm/m/n/10.95 I will use bi-nary cross en-tropy with log-its
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
- []
-
-
-Underfull \hbox (badness 1867) in paragraph at lines 146--168
-\OT1/ptm/m/n/10.95 dings that uses three dif-fer-ent fil-ters of size
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-\OT1/ptm/m/n/10.95 (4) Ap-ply 1-max pool-ing to down-sample
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 146--168
-\OT1/ptm/m/n/10.95 the in-put rep-re-sen-ta-tion and to help pre-vent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
- []
-
-
-Underfull \hbox (badness 3000) in paragraph at lines 146--168
-\OT1/ptm/m/n/10.95 (5) Con-cate-nate vec-tors af-ter 1-max pool-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--168
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
 
  []
 
 [3]
-<figures/figure5.png, id=62, 217.81375pt x 218.8175pt>
+<figures/figure4.png, id=69, 174.6525pt x 168.63pt>
+File: figures/figure4.png Graphic file (type png)
+<use figures/figure4.png>
+Package pdftex.def Info: figures/figure4.png  used on input line 125.
+(pdftex.def)             Requested size: 174.65207pt x 168.62958pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 Here are the steps of how Kim-CNN works
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 dings that uses three dif-fer-ent fil-ters of size
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 (3) Ap-ply ReLU to add the abil-ity to model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 (4) Ap-ply 1-max pool-ing to down-sample
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 the out-put rep-re-sen-ta-tion of the con-vo-lu-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 133--150
+\OT1/ptm/m/n/10.95 (5) Con-cate-nate vec-tors af-ter 1-max pool-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--150
+
+ []
+
+<figures/figure5.png, id=72, 217.81375pt x 218.8175pt>
 File: figures/figure5.png Graphic file (type png)
 <use figures/figure5.png>
-Package pdftex.def Info: figures/figure5.png  used on input line 171.
+Package pdftex.def Info: figures/figure5.png  used on input line 153.
 (pdftex.def)             Requested size: 217.8132pt x 218.81696pt.
 
-Underfull \hbox (badness 1881) in paragraph at lines 181--182
+Underfull \hbox (badness 1881) in paragraph at lines 163--164
 \OT1/ptm/m/n/10.95 I have fine-tuned BERT and XLM-RoBERTa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 185--193
-\OT1/ptm/m/n/10.95 Since our train-ing dataset is rather large and
+Underfull \hbox (badness 1348) in paragraph at lines 167--175
+\OT1/ptm/m/n/10.95 Since the train-ing dataset is rather large and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 185--193
+Underfull \hbox (badness 1337) in paragraph at lines 167--175
 \OT1/ptm/m/n/10.95 The BERT pa-per had a list of hy-per-pa-ram-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
-
- []
-
-
-Underfull \vbox (badness 3229) has occurred while \output is active []
-
-<figures/figure6.png, id=66, 159.59625pt x 113.42375pt>
-File: figures/figure6.png Graphic file (type png)
-<use figures/figure6.png>
-Package pdftex.def Info: figures/figure6.png  used on input line 196.
-(pdftex.def)             Requested size: 159.59584pt x 113.42346pt.
-<figures/figure7.png, id=67, 161.60374pt x 114.4275pt>
-File: figures/figure7.png Graphic file (type png)
-<use figures/figure7.png>
-Package pdftex.def Info: figures/figure7.png  used on input line 202.
-(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
-<figures/figure8.png, id=68, 161.60374pt x 114.4275pt>
-File: figures/figure8.png Graphic file (type png)
-<use figures/figure8.png>
-Package pdftex.def Info: figures/figure8.png  used on input line 208.
-(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
-<figures/figure9.png, id=69, 161.60374pt x 114.4275pt>
-File: figures/figure9.png Graphic file (type png)
-<use figures/figure9.png>
-Package pdftex.def Info: figures/figure9.png  used on input line 214.
-(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 220.
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
 
  []
 
 [4 <./figures/figure4.png> <./figures/figure5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+<figures/figure6.png, id=90, 159.59625pt x 113.42375pt>
+File: figures/figure6.png Graphic file (type png)
+<use figures/figure6.png>
+Package pdftex.def Info: figures/figure6.png  used on input line 178.
+(pdftex.def)             Requested size: 159.59584pt x 113.42346pt.
+<figures/figure7.png, id=91, 161.60374pt x 114.4275pt>
+File: figures/figure7.png Graphic file (type png)
+<use figures/figure7.png>
+Package pdftex.def Info: figures/figure7.png  used on input line 184.
+(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
+<figures/figure8.png, id=92, 161.60374pt x 114.4275pt>
+File: figures/figure8.png Graphic file (type png)
+<use figures/figure8.png>
+Package pdftex.def Info: figures/figure8.png  used on input line 190.
+(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
+<figures/figure9.png, id=93, 161.60374pt x 114.4275pt>
+File: figures/figure9.png Graphic file (type png)
+<use figures/figure9.png>
+Package pdftex.def Info: figures/figure9.png  used on input line 196.
+(pdftex.def)             Requested size: 161.60335pt x 114.42722pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 202.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Underfull \hbox (badness 6559) in paragraph at lines 254--257
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
+
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 235--238
 \OT1/ptm/m/n/10.95 My fine-tuned BERT base model achieved
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
 [5 <./figures/figure6.png> <./figures/figure7.png> <./figures/figure8.png> <./f
 igures/figure9.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 276.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 \OT1/ptm/m/n/10.95 After fine-tuning XLM-RoBERTa, my best
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--323
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 318--323
+Underfull \hbox (badness 1360) in paragraph at lines 299--304
 \OT1/ptm/m/n/10.95 Also, I have found that multi-lingual mod-els
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--323
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 318--323
+Underfull \hbox (badness 1571) in paragraph at lines 299--304
 \OT1/ptm/m/n/10.95 Lastly, TPU is pow-er-ful es-pe-cially comes to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--323
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 
  []
 
-(./final_report.bbl
-Underfull \hbox (badness 2197) in paragraph at lines 8--13
+[6] (./final_report.bbl
+Underfull \hbox (badness 2197) in paragraph at lines 12--17
 []\OT1/ptm/m/n/10 Alexis Con-neau, Kar-tikay Khan-del-wal, Na-man
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 8--13
+Underfull \hbox (badness 1902) in paragraph at lines 12--17
 \OT1/ptm/m/n/10 Goyal, Vishrav Chaud-hary, Guil-laume Wen-zek,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 26--30
+Underfull \hbox (badness 1502) in paragraph at lines 38--42
 \OT1/ptm/m/n/10 Man-dar Joshi, Danqi Chen, Omer Levy, Mike
  []
 
+
+Underfull \hbox (badness 1231) in paragraph at lines 53--57
+[]\OT1/ptm/m/n/10 Ashish Vaswani, Noam Shazeer, Niki Par-mar,
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
  (./final_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
 Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  )
 (\end occurred when \iffalse on line 346 was incomplete) 
 Here is how much of TeX's memory you used:
- 7381 strings out of 480608
- 114888 string characters out of 5903631
- 383870 words of memory out of 5000000
- 23095 multiletter control sequences out of 15000+600000
+ 7406 strings out of 480608
+ 115326 string characters out of 5903631
+ 385003 words of memory out of 5000000
+ 23113 multiletter control sequences out of 15000+600000
  549618 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,10n,48p,1150b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,48p,1112b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/202
 0/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on final_report.pdf (6 pages, 283343 bytes).
+Output written on final_report.pdf (7 pages, 318525 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

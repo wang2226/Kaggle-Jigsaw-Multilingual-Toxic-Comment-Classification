@@ -1,4 +1,8 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{self-attention}
+Jay Alammar.
+\newblock The illustrated transformer.
 
 \bibitem{test-en-df}
 Camaro.
@@ -17,6 +21,14 @@ Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova.
   understanding.
 \newblock {\em CoRR}, abs/1810.04805, 2018.
 
+\bibitem{jigsaw}
+Jigsaw.
+\newblock Jigsaw llc, Mar 2020.
+
+\bibitem{kaggle}
+Jigsaw.
+\newblock Jigsaw multilingual toxic comment classification, Mar 2020.
+
 \bibitem{kimcnn}
 Yoon Kim.
 \newblock Convolutional neural networks for sentence classification.
@@ -32,6 +44,10 @@ Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer
 Ilya Loshchilov and Frank Hutter.
 \newblock Fixing weight decay regularization in adam.
 \newblock {\em CoRR}, abs/1711.05101, 2017.
+
+\bibitem{xla}
+PyTorch.
+\newblock Pytorch on xla devices.
 
 \bibitem{attention}
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
