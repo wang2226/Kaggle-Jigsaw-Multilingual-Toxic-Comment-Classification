@@ -6,6 +6,8 @@
 
 \usepackage{url}
 
+\usepackage{tabularx}
+
 \aclfinalcopy % Uncomment this line for the final submission
 
 \newcommand\BibTeX{B{\sc ib}\TeX}
@@ -50,7 +52,7 @@ Multi-headed attention computes self-attention multiple times in parallel and in
 \\
 To calculate self-attention, the encoder creates a query vector, a key vector, and a value vector for the embeddings of different words in the sequence. Next, it calculates the dot product of the query vector with the key vector for each word of the input sequence against the other words in the sequence. Then, it divides the dot product by the square root of the dimension of the key vectors, followed by an application of the softmax function. Finally it multiplies each value vector by the softmax score and sums up the weighted value vectors.\\
 \\
-Transformers also add positional encoding when encoding each word. BERT’s structure makes BERT different from context-free word embeddings such as word2vec and GloVe, which simply generate word embedding (vectors) for each word regardless of that word's context. Instead, BERT generates different word embeddings based on word context. This makes BERT a very powerful language model.\\
+Transformers also add positional encoding when encoding each word. BERT’s structure makes BERT different from context-free word embeddings such as word2vec and GloVe, which simply generate word embedding (vectors) for each word regardless of that word's context. Instead, BERT generates different word embeddings based on word context. This makes BERT a very powerful language model.
 
 \begin{figure}[!htbp]
 	\centering
@@ -85,40 +87,43 @@ BERT is pre-trained on two tasks: Masked Language Modeling (MLM) and Next Senten
 For MLM, before feeding text sequences into BERT, some words in the sequence are masked with the [MASK] token. BERT then tries to predict the original value of the masked words based on the context of the sequence.\\
 \\
 For NSP, BERT receives pairs of text sequences as input, and BERT tries to predict if the second sentence is the subsequent sentence in the original document.
-When the BERT model was trained, both MSM and NSP were trained together, and the goal was to minimize the combined loss function of both.\\
-
+When the BERT model was trained, both MSM and NSP were trained together, and the goal was to minimize the combined loss function of both.
 
 \subsection{XLM-RoBERTa}
 
 BERT is trained entirely on English data. Many researchers who are working on non-English data have then come up with language specific models such as Finnish BERT, French BERT and German BERT. Research on a multilingual model continues to this day. In November 2019, the Facebook AI team resleased XLM-RoBERT \cite{xlm-roberta}, an update to their XLM-100 model. They used the RoBERTa \cite{roberta} model (A Robustly Optimized BERT Pretraining Approach) to improve XLM-100 and hence produce XLM-RoBERTa.\\
 \\
-XLM-RoBERTa is trained on 100 languages, total of 2.5TB of text. The pre-trained XLM-RoBERTa has 550 million parameters, compared to RoBERTa's 355 million.\\
+XLM-RoBERTa is trained on 100 languages, total of 2.5TB of text. The pre-trained XLM-RoBERTa has 550 million parameters, compared to RoBERTa's 355 million.
 
 \subsection{TPU}
 
-The Tensor Processing Unit is an ASIC developed by Google to specialize in deep learning. Models that previously took days to train on GPU can be trained in hours on TPU. However, in order to use PyTorch on TPU, we have to use a package called Pytorch/XLA. There are currently no stable releases of this platform.\\ 
+The Tensor Processing Unit is an ASIC developed by Google to specialize in deep learning. Models that previously took days to train on GPU can be trained in hours on TPU. However, in order to use PyTorch on TPU, we have to use a package called Pytorch/XLA. There are currently no stable releases of this platform.
 
 \section{Data}
 
-The Jigsaw Kaggle competition has provided a training set, validation set, and test set. The training set’s comments are entirely in English. The test set’s comments are composed of multiple non-English languages. I have combined the training set from the previous competition to make a large training set of 2.1 million comments. Since my computational resources are limited, I only used the first 200,000 datapoints as my training set. \\
+The Jigsaw Kaggle competition \cite{kaggle} has provided a training set, validation set, and test set. The training set’s comments are entirely in English. The validation and test sets' comments are composed of multiple non-English languages. I have combined the training set from the previous competition to make a large training set of 2.1 million comments. Since my computational resources are limited, I only used the first 200,000 datapoints as my training set. \\
 \\
-I used the BERT and XLM-RoBERTa pre-trained tokenizer to tokenize and pad the training data. As for the test set, I used this test set shared by one of the competitors \cite{test-en-df} which translates the entire test set into English. When I evaluate my XLM-RoBERTa model, I can do it directly without translating the test set because it is a cross-lingual model.\\ 
+I used the BERT and XLM-RoBERTa pre-trained tokenizer to tokenize and pad the training data.\\
 \\
-Since this is a kernel-only competition, inferencing is done separately on a Kaggle notebook.\\
+The validation set has 8,000 datapoints. I tested my trained model directly on the validation set without translating it into English.\\
+\\
+The test set has 63,812 datapoints. I used this test set shared by one of the competitors \cite{test-en-df} which translates the entire test set into English. I used this translated test set to evaluate my BERT and BERT+CNN models. However,  I evaluated my XLM-RoBERTa model directly on the test set because it is a cross-lingual model.\\ 
+\\
+Since this is a kernel-only competition, inferencing is done separately on Kaggle notebooks.
 
 \section{Models}
 
-This section  investigates three different models.\\
+This section  investigates three different models using both GPU and TPU.
 
 \subsection{BERT for Text Classification Directly}
 
-To adapt pre-trained BERT base model to do text classification, I just need to add a classifier layer on top of the 12 BERT layers. Then, I can fine-tune the hyper-parameters to improve performance.\\
+To adapt pre-trained BERT (base) model to classify toxic comments, I simply added a classifier layer on top of the 12 BERT layers. Then, I fine-tuned the hyperparameters to improve performance.\\
 \\
-I will add drop out for BERT base to prevent overfitting. BERT base model produces two outputs: last hidden state and pooled output. After BERT base, I will do a mean pooling and max pooling on the last hidden state from BERT base. Then, I will concatenate them and send it to a linear (output) layer. \\
+First, I added drop out for BERT output to prevent overfitting. The BERT model produces two outputs: last hidden state and pooled output. I applied mean pooling and max pooling on the last hidden state from BERT output. Then, I concatenated them and sent it to a linear (output) layer. \\
 \\
-This linear (output) layer has size of (768*2,1). 768 is the hidden size of BERT base, which means it has 768 output features, we times it by 2 because we did both max pooling and mean pooling before. Since it is a binary classification problem, I put 1 to make the output value between 0 and 1.\\
+The linear (output) layer has size of ($768 \times $2,1). 768 is the hidden size of BERT, which means it has 768 output features, we times it by 2 because we did both max pooling and mean pooling and concatenated them together. Since it is a binary classification problem, I put 1 to make the output value between 0 and 1.\\
 \\
-I will use binary cross entropy with logits loss as our loss function, and Adam with decoupled weight decay\cite{weight} as our optimizer.\\
+I used binary cross entropy with logits loss as the loss function, and Adam with decoupled weight decay \cite{weight} as the optimizer. To evaluate the performance on validation set, I used ROC-AUC score \cite{roc}, which is a desirable way to measure classification performance.  It has the following advantages: (1) It measures how well predictions are ranked, rather than their absolute values. (2) It measures the quality of the model's prediction irrespective of what classification threshold is.\\
 
 \begin{figure}[!htbp]
 	\centering
@@ -130,13 +135,13 @@ I will use binary cross entropy with logits loss as our loss function, and Adam 
 
 \subsection{BERT as word Embeddings + KimCNN}
 
-I will use BERT to tokenize and pad words into word embeddings. Then I will feed those word embeddings to a CNN introduced in this paper \cite{kimcnn} by Yoon Kim from New York University in 2014.\\
+I used BERT tokenizer to tokenize and pad words into word embeddings. Then I fed them  to a CNN introduced in this paper \cite{kimcnn} by Yoon Kim from New York University in 2014.\\
 \\
 Here are the steps of how KimCNN works in details \cite{kimcnn}:\\
 \\
-(1) After we get word embeddings from BERT, which are of size [192, 768]. The max sequence length is 192 and the embedding size is 768.\\
+(1) The word embeddings from BERT are of size [192, 768]. This is because the max sequence length is 192 and the embedding size is 768.\\
 \\
-(2) The model applies convolution on embed-dings that uses three different filters of size [2, 768], [3, 768], and [4, 768]. These filters correspond to capturing the bi-gram, tri-gram, and 4-gram relations.\\
+(2) The model applies convolution on word embeddings that uses three different filters of size [2, 768], [3, 768], and [4, 768]. These filters correspond to capturing the bi-gram, tri-gram, and 4-gram relations in a sentence.\\
 \\
 (3) Apply ReLU to add the ability to model nonlinear problems.\\
 \\
@@ -156,22 +161,22 @@ Here are the steps of how KimCNN works in details \cite{kimcnn}:\\
 
 \subsection{Cross-lingual model: XLM-RoBERTa}
 
-This is very similar to BERT. The pre-trained XLM-RoBERTa has two outputs, last hidden state and pooled output. The pooled output is feed into a linear layer of size (1024, 1). 1024 is the hidden size of XLM-RoBERTa.
+This is very similar to BERT. The pre-trained XLM-RoBERTa has two outputs, last hidden state and pooled output. The pooled output is feed into a linear (output) layer of size (1024, 1). This is because the hidden size of XLM-RoBERTa is 1024 and the output values should be between 0 and 1.
 
 \section{Experiments}
 
-I have fine-tuned BERT and XLM-RoBERTa to compare against CNN. Also, I have trained BERT both on GPU and TPU to compare the performances.\\
+I have fine-tuned BERT and XLM-RoBERTa to compare against CNN. Also, I have trained BERT both on GPU and TPU to compare the performances.
 
 \subsection{Fine-tune BERT on GPU}
 
-For fine-tuning, I will tune these hyperparameters: learning rate, batch size and number of training epochs.\\
+For fine-tuning, I tuned these hyperparameters: learning rate, batch size and number of training epochs.\\
 \\
 Since the training dataset is rather large and training on GPU takes a long time, I will tune the hyperparameters on the first 50,000 datapoints.\\
 \\
-The BERT paper had a list of hyperparameters that generally work well across all tasks, which I can use as my starting point to fine-tune \cite{BERT}: 
+The BERT paper had a list of hyperparameters that generally work well across all tasks, which I used as my starting point to fine-tune \cite{BERT}: 
 Batch size: 16, 32; Learning rate: 5e-5, 3e-5, 2e-5; Number of epochs: 2, 3, 4.\\
 \\
-\textbf {Learning Rate:} Learning rate is perhaps the most critical one of all the hyperparameters. To tune learning rate, I will fix the training batch size to be 64 and the validation batch size to be 8. Training on one epoch. The training and validation losses plot every 100 batches to make the plot less clustered. I will use ROC-AUC score to measure how well our model performs on validation set. Please note that the y-axes of figures below are at different scales.\\
+\textbf {Learning Rate:} Learning rate is perhaps the most critical one of all the hyperparameters. To tune learning rate, I fixed the training batch size to be 64 and the validation batch size to be 8. Training on one epoch. The training and validation losses are plotted every 100 batches to make the plots less clustered. I used ROC-AUC score to measure how well my model performed on validation set. Please note that the y-axes of figures below are at different scales. For reference, there are 781 training batches and 1,000 validation batches.\\
 
 \begin{figure}[!htbp]
 	\centering
@@ -210,13 +215,13 @@ Batch size: 16, 32; Learning rate: 5e-5, 3e-5, 2e-5; Number of epochs: 2, 3, 4.\
 	\caption{\label{table:my-label} Learning Rate vs. ROC-AUC}
 \end{table}
 
-\noindent As shown by Table 1, with an aggressive learning rate of 5e-3, the model did poorly. I find that a good learning rate for this model should be around 2e-5, which is suggested by the paper.\\
+\noindent As shown by Table 1, with an aggressive learning rate of 5e-3, the model did poorly on the validation set. I found that a good learning rate for this model should be around 2e-5, which is suggested by the paper.\\
 
-\noindent \textbf {Batch Size:} I will set learning rate to be 1e-5, training on 3 epochs to tune batch sizes.\\
+\noindent \textbf {Batch Size:} I set learning rate to be 1e-5, and trained on 3 epochs to tune batch sizes.\\
 \\
-Generally, too large of a batch size will lead to poor generalization, while too small of a batch size will not guarantee convergence to the global optimum. It will bounce around the global optima instead. [10]\\
+Generally, too large of a batch size will lead to poor generalization, while too small of a batch size will not guarantee convergence to the global optimum. It will bounce around the global optima instead. \\
 \\
-I have found that the max training batch size is 64. I tried training batch sizes of 128 and 256, which will blow up GPU memory.\\
+I have found that the max training batch size I can use for this model is 64. I tried training batch sizes of 128 and 256, which will blow up the GPU memory on Google Colab notebook.\\
 
 \begin{table}[!htbp]
 	\centering
@@ -230,11 +235,13 @@ I have found that the max training batch size is 64. I tried training batch size
 	\caption{\label{table:my-label} Batch Size vs. ROC-AUC}
 \end{table}
 
-\noindent As we can see training batch size of 64 is ideal for this model given my constraints.\\
+\noindent This table shows that training batch size of 64 is ideal for this model given my constraints.\\
 
-\noindent \textbf {Number of Epochs: }  After trained on 6 epochs with learning rate of 1e-6, training batch size of 64, validation batch size of 8. We get an ROC-AUC score of 0.83 at the 6th epoch. As the originial paper suggested, BERT is far less sensitive to hyperparameter tuning on large data sets (100k+)\cite{BERT}. As we can see from the results, once the hyperparameters are set to around the optimal values, it does not affect the model much.\\
+\noindent \textbf {Number of Epochs: }  After trained on 6 epochs with learning rate of 1e-6, training batch size of 64, validation batch size of 8. I got an ROC-AUC score of 0.83 at the 6th epoch.\\
 \\
-\noindent My fine-tuned BERT base model achieved the accuracy of 0.9012 on the test set on Kaggle. This model takes 4.7 hours to train on GPU.\\
+ In conclusion, as the originial paper suggests, BERT is far less sensitive to hyperparameter tuning on large data sets (100k+)\cite{BERT}. The results show that once the hyperparameters are set near the optimal values, it does not affect the performance of the model much.\\
+\\
+\noindent My fine-tuned BERT (base) model achieved the accuracy of 0.9012 on the test set on Kaggle. This model took 4.7 hours to train on GPU.\\
 
 \begin{table}[!htbp]
 	\centering
@@ -270,15 +277,43 @@ I trained my best BERT model on TPU. I used XLA package, which enables PyTorch o
 	\caption{\label{table:my-label} Training Time on TPU}
 \end{table}
 
-\noindent As shown by Table 4, it only takes 12 minutes to train for one epoch on TPU vs. 56 minutes to train for one epoch on GPU.\\
+\noindent As shown by Table 4, it only took 12 minutes to train for one epoch on TPU vs. 56 minutes to train for one epoch on GPU.\\
 
 \subsection{BERT + CNN}
 
-Based on my experiments, this model does not perform well on the dataset. The training loss failed to converge to a low rate.
+I started with a relatively large batch size and learning rate training for 5 epochs. Then I gradually tuned down the batch size and learning rate while training for more epochs.\\
+\\
+However, this model does not perform well on the dataset. The training loss failed to converge to a low loss, and the ROC-AUC score is quite low.\\
+
+\begin{table}[!htbp]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Training Batch Size & Learning Rate & ROC-AUC \\ \hline
+		128                 & 1e-3          & 0.51    \\ \hline
+		128                 & 1e-5          & 0.44    \\ \hline
+		64                  & 5e-6          & 0.46    \\ \hline
+		32                  & 1e-6          & 0.44    \\ \hline
+	\end{tabular}
+	\caption{\label{table:my-label} BERT+CNN}
+\end{table}
 
 \subsection{Fine-tune XLM-RoBERTa}
 
-After fine-tuning XLM-RoBERTa, my best performed model achieves 0.9459 on test set on Kaggle.\\
+I did similar fine-tuning procedures as the BERT model described above. I found that the max training batch size I can use on Colab TPU is 16.
+
+\begin{table}[!htbp]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Learning Rate                & ROC-AUC & Time    \\ \hline
+		5e-6  & 0.9394  & 46m 7s  \\ \hline
+		1e-6   & 0.9552  & 43m 36s \\ \hline
+	\end{tabular}
+	\caption{\label{table:my-label} Learning Rate vs. ROC-AUC}
+\end{table}
+
+\noindent After fine-tuned XLM-RoBERTa, my best performed model achieved 0.9459 on test set on Kaggle.
 
 \begin{table}[!htbp]
 	\centering
@@ -296,11 +331,13 @@ After fine-tuning XLM-RoBERTa, my best performed model achieves 0.9459 on test s
 
 \section{Conclusion}
 
-This paper has shown that transfer learning on powerful models like BERT achieves much better result than creating a model from scratch. This is because models like BERT takes a lot of resources to train and it generalize very well on different tasks.\\
+I have found that transfer learning utilizing BERT is very effective comparing to using a simple model such as CNN. A large language model like BERT takes a lot of resources to train and it generalize very well on many NLP tasks, including text classification. On the other hand, the CNN model I tried is very simple and did not have enough data to be trained on.\\
 \\
-Also, I have found that multi-lingual models performs better than mono-lingual models.\\
+Transfer learning also depends on the similarity between the task the model was trained on and the task that needs to be solved. Since XLM-RoBERTa was trained to be a cross-lingual model, it generalize well on the test set than BERT, which is a mono-lingual model.\\
 \\
-Lastly, TPU is powerful especially comes to training a very large model like BERT.\\
+Therefore, transfer learning utilizing BERT to do text classification will achieve a high performance without a lot of effort comparing to build a specific model from scratch, which is quite challenging.\\
+\\
+Lastly, TPU is powerful especially comes to training a very large model like BERT. Models like BERT and XLM-RoBERTa takes a lot of computational resources to train. TPU dramatically increase the speed of training those models.\\
 
 
 \newpage

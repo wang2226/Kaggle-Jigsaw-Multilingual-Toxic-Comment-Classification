@@ -49,6 +49,10 @@ Ilya Loshchilov and Frank Hutter.
 PyTorch.
 \newblock Pytorch on xla devices.
 
+\bibitem{roc}
+sklearn.
+\newblock Roc-auc score.
+
 \bibitem{attention}
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
   Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
