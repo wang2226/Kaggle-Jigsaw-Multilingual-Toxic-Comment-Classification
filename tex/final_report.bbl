@@ -1,12 +1,18 @@
 \begin{thebibliography}{10}
 
+\bibitem{jigsaw}
+Jigsaw llc.
+\newblock \url{https://jigsaw.google.com/}.
+
 \bibitem{self-attention}
 Jay Alammar.
 \newblock The illustrated transformer.
+\newblock \url{http://jalammar.github.io/illustrated-transformer/}.
 
 \bibitem{test-en-df}
 Camaro.
-\newblock test-en-df, Mar 2020.
+\newblock test-en-df.
+\newblock \url{https://www.kaggle.com/bamps53/test-en-df}.
 
 \bibitem{xlm-roberta}
 Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume
@@ -20,10 +26,6 @@ Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova.
 \newblock {BERT:} pre-training of deep bidirectional transformers for language
   understanding.
 \newblock {\em CoRR}, abs/1810.04805, 2018.
-
-\bibitem{jigsaw}
-Jigsaw.
-\newblock Jigsaw llc, Mar 2020.
 
 \bibitem{kaggle}
 Jigsaw.
@@ -48,10 +50,13 @@ Ilya Loshchilov and Frank Hutter.
 \bibitem{xla}
 PyTorch.
 \newblock Pytorch on xla devices.
+\newblock \url{https://pytorch.org/xla/release/1.5/index.html#}.
 
 \bibitem{roc}
 sklearn.
 \newblock Roc-auc score.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html}.
 
 \bibitem{attention}
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
